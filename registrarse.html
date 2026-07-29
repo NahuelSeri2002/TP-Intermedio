@@ -29,16 +29,24 @@
             <section class="registrarse">
                 <form action="./index.html" class="default-form">
                     <div>
-                        <p>Nombre de usuario</p>
-                        <input type="text" placeholder="Tu nombre" required>
+                        <label for="nombre">Nombre de usuario</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                     </div>
                     <div>
-                        <p>Correo electronico</p>
-                        <input type="email" placeholder="tunombre@ejemplo.com" required>
+                        <label for="correo-r">Correo electronico</label>
+                        <input type="email" id="correo-r" name="correo-r" placeholder="tunombre@ejemplo.com" required>
                     </div>
                     <div>
-                        <p>Contraseña</p>
-                       <input type="password" placeholder="contraseña" required> 
+                        <label for="contraseña-r">Contraseña</label>
+                       <input type="password" id="contraseña-r" name="contraseña-r" placeholder="contraseña" required> 
+                    </div>
+                    <div>
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" name="edad" placeholder="16" min="16" max="99" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="11-1111-1111" required>
                     </div>
                     <div>
                         <p>Genero</p>
@@ -58,6 +66,10 @@
                             <input type="checkbox" class="checkbox" required>
                             <span>Acepto la Política de Privacidad y doy mi consentimiento para el procesamiento de mi información personal de acuerdo con la misma</span>
                         </label>
+                    </div>
+                    <div class="bio">
+                        <label for="biografia">Sobre Mi</label>
+                        <textarea name="biografia" id="biografia" maxlength="2000" rows="5" placeholder="Cuéntanos un poco sobre ti y tus gustos..." required></textarea>
                     </div>
                     <div class="enviar">
                         <button type="submit" class="envio btn  btn-form">Registrarse</button>
