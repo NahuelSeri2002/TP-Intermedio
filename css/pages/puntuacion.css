@@ -8,11 +8,6 @@
     gap: 2rem;
 }
 
-.puntuacion h2{
-    margin-top: 3rem;
-    font-size: 2rem;
-}
-
 .cards-container{
     display: flex;
     justify-content: center;
@@ -55,14 +50,15 @@
     transform: scale(1.05);
 }
 
-.card p{
+.card .artist{
     font-style: italic;
     color: var(--text-muted);
     transition: all 0.2s;
     cursor: pointer;
+    margin-top: 0.5rem;
 }
 
-.card p:hover{
+.card .artist:hover{
     color: var(--text-on-accent);
     transform: scale(1.05);
 }
@@ -98,7 +94,7 @@
 .card-btn{
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .like{

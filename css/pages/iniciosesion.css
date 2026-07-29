@@ -2,15 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     flex-direction: column;
     gap: 2rem;
 }
 
-.inicio-sesion h2{
-    margin-top: 3rem;
-    font-size: 2rem;
-}
 
 .inicio-sesion label {
     display: flex;
@@ -36,5 +32,6 @@
     cursor: pointer;
     margin-top: 0.1rem; 
 }
+
 
 
