@@ -3,10 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     width: 100%;
-    padding: 2rem;
-    margin: 0 2rem;
+    gap: 2rem;
+}
+
+.puntuacion h2{
+    margin-top: 3rem;
+    font-size: 2rem;
 }
 
 .cards-container{
@@ -16,7 +20,6 @@
     gap: 4rem;            
     width: 100%;
     max-width: 1200px;    
-    padding: 2rem 1rem;
     box-sizing: border-box;
 }
 
@@ -44,11 +47,24 @@
     text-align: center;
     margin-top: 0;
     width: 100%; 
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.card h3:hover{
+    transform: scale(1.05);
 }
 
 .card p{
     font-style: italic;
     color: var(--text-muted);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.card p:hover{
+    color: var(--text-on-accent);
+    transform: scale(1.05);
 }
 
 .card img{
@@ -56,6 +72,12 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 12px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card img:hover{
+    transform: scale(1.05);
 }
 
 .rating-stars{

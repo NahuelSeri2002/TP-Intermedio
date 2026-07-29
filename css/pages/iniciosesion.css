@@ -1,14 +1,15 @@
-
-main h2{
-    margin-top: 3rem;
-    font-size: 2rem;
-}
-
 .inicio-sesion{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inicio-sesion h2{
+    margin-top: 3rem;
+    font-size: 2rem;
 }
 
 .inicio-sesion label {
